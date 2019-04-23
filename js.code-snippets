@@ -78,11 +78,11 @@
 		"prefix": ".then",
 		"body": [
 			"",
-			".then(($1) => {",
+			".then((res$1) => {",
 			"    $2",
 			"})",
 			".catch((err) => {",
-			"    console.log(err);",
+			"    throw err;",
 			"});",
 		],
 		"description": "Import a module"

@@ -1,90 +1,106 @@
 {
-	"Print to console": {
-		"scope": "javascript,typescript",
-		"prefix": "con",
-		"body": [
-			"console.log('$1');",
-			"$0"
-		],
-		"description": "Log output to console"
-	},
-	"Require a module": {
-		"scope": "javascript,typescript",
-		"prefix": "req",
-		"body": [
-			"const $1 = require('$1$2');",
-			"$0"
-		],
-		"description": "Require a module"
-	},
-	"Express router get": {
-		"scope": "javascript,typescript",
-		"prefix": "get",
-		"body": [
-			"router.get('/$1', (req, res, next) => {",
-			"    $2",
-			"    res.send('$1');",
-			"});",
-		],
-		"description": "Express router get"
-	},
-	"Function": {
-		"scope": "javascript,typescript",
-		"prefix": "fun",
-		"body": [
-			"function(${1:arguments}) {",
-			"    $0",
-			"}",
-		],
-		"description": "Create a function"
-	},
-	"Arrow function": {
-		"scope": "javascript,typescript",
-		"prefix": [
-			"f",
-			"a"
-		],
-		"body": [
-			"(${1:arguments}) => {",
-			"    $0",
-			"}",
-		],
-		"description": "Create an arrow function"
-	},
-	"Error": {
-		"scope": "javascript,typescript",
-		"prefix": "err",
-		"body": [
-			"if(err) {",
-			"    throw err;",
-			"}",
-		],
-		"description": "Throw an error"
-	},
-	"Import module": {
-		"scope": "javascript,typescript",
-		"prefix": [
-			"imp",
-			"import"
-		],
-		"body": [
-			"import { $1 } from '$1$2';",
-			"$3",
-		],
-		"description": "Import a module"
-	},
-	"Promise then catch": {
-		"scope": "javascript,typescript",
-		"prefix": ".then",
-		"body": [
-			"",
-			".then((res$1) => {",
-			"    $2",
-			"})",
-			".catch((err) => {",
-			"    throw err;",
-			"});",
-		],
-		"description": "Import a module"
-	},
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "con",
+    "body": [
+      "console.log('$1');",
+      "$0"
+    ],
+    "description": "Log output to console"
+  },
+  "Require a module": {
+    "scope": "javascript,typescript",
+    "prefix": "req",
+    "body": [
+      "const $1 = require('$1$2');",
+      "$0"
+    ],
+    "description": "Require a module"
+  },
+  "Express router get": {
+    "scope": "javascript,typescript",
+    "prefix": "get",
+    "body": [
+      "router.get('/$1', (req, res, next) => {",
+      "    $2",
+      "    res.send('$1');",
+      "});",
+    ],
+    "description": "Express router get"
+  },
+  "Function": {
+    "scope": "javascript,typescript",
+    "prefix": "fun",
+    "body": [
+      "function(${1:arguments}) {",
+      "    $0",
+      "}",
+    ],
+    "description": "Create a function"
+  },
+  "Arrow function": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "f",
+      "a"
+    ],
+    "body": [
+      "(${1:arguments}) => {",
+      "    $0",
+      "}",
+    ],
+    "description": "Create an arrow function"
+  },
+  "Error": {
+    "scope": "javascript,typescript",
+    "prefix": "err",
+    "body": [
+      "if(err) {",
+      "    throw err;",
+      "}",
+    ],
+    "description": "Throw an error"
+  },
+  "Import module": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "imp",
+      "import"
+    ],
+    "body": [
+      "import { $1 } from '$1$2';",
+      "$3",
+    ],
+    "description": "Import a module"
+  },
+  "Promise then catch": {
+    "scope": "javascript,typescript",
+    "prefix": ".then",
+    "body": [
+      "",
+      ".then((res$1) => {",
+      "    $2",
+      "})",
+      ".catch((err) => {",
+      "    throw err;",
+      "});",
+    ],
+    "description": "Import a module"
+  },
+  "Try catch": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "tr",
+      "try"
+    ],
+    "body": [
+      "try {",
+      "   $1",
+      "} catch (err) {",
+      "   throw err;",
+      "}",
+      "$2",
+    ],
+    "description": "Try catch"
+  },
 }
